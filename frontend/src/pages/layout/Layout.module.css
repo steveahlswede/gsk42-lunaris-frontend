@@ -1,0 +1,72 @@
+.layout {
+    background-image: url("https://stchatbothostprodeuw001.blob.core.windows.net/publiccontent/Hintergrund_GSK42.jpg");
+    background-size: cover; /* Passt das Bild an den Container an */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    background-position: center center; /* Zentriert das Bild */
+    height: 100vh; /* Fixiert die Höhe auf die des Viewports */
+    overflow: hidden; /* Verhindert, dass der Hintergrund scrollt */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.topLevelLayout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.header {
+    color: #000000;
+    width: 100%;
+    z-index: 1000;
+    min-height: 60px;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.headerCompanyLogo {
+    background: #00839b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    left: 0;
+    padding: 25px 55px 0 5px;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+}
+
+.menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.loginMenuContainer {
+    display: flex;
+    align-items: center;
+    gap: 0; /* Ensure no gap between login button and menu toggle */
+}
+
+@media (min-width: 992px) {
+    .headerRightText {
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .menuToggle {
+        display: none;
+    }
+}

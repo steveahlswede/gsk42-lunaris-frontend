@@ -1,0 +1,30 @@
+.localeSwitcher {
+    word-break: break-word;
+    background: linear-gradient(135deg, #f3f4f6, #e3e6ed);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.localeSwitcher:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    outline: 1px solid rgba(115, 118, 225, 0.8);
+}
+
+.localeFlag {
+    width: 24px;
+    height: auto;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

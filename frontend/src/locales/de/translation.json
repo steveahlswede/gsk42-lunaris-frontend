@@ -1,0 +1,164 @@
+{
+    "pageTitle": "GSK-GPT",
+    "chat": "Chat",
+    "qa": "Frage stellen",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "delete": "Löschen",
+    "updateTitle": "Titel ändern",
+    "clearChat": "Neuen Chat starten",
+    "upload": {
+        "fileLabel": "Datei hochladen:",
+        "uploadedFilesLabel": "Bereits hochgeladene Dateien:",
+        "noFilesUploaded": "Noch keine Dateien hochgeladen",
+        "loading": "Wird geladen...",
+        "manageFileUploads": "Datei-Uploads verwalten",
+        "uploadingFiles": "Dateien werden hochgeladen...",
+        "uploadedFileError": "Fehler beim Hochladen der Datei - bitte versuchen Sie es erneut oder kontaktieren Sie den Administrator.",
+        "uploadedFileSuccess": "Datei erfolgreich hochgeladen.",
+        "deleteFile": "Datei löschen",
+        "deletingFile": "Datei wird gelöscht...",
+        "errorDeleting": "Fehler beim Löschen.",
+        "fileDeleted": "Datei gelöscht"
+    },
+    "developerSettings": "Entwicklereinstellungen",
+
+    "chatEmptyStateTitle": "GSK-GPT",
+    "chatEmptyStateSubtitle": "Ihr intelligenter KI-Assistent",
+    "defaultExamples": {
+        "1": "Beispiel 1",
+        "2": "Beispiel 2",
+        "3": "Beispiel 3",
+        "placeholder": "Geben Sie eine neue Frage ein | Absenden mit Enter"
+    },
+    "askTitle": "Fragen Sie Ihre Daten",
+    "gpt4vExamples": {
+        "1": "Frage 1",
+        "2": "Frage 2",
+        "3": "Frage 3",
+        "placeholder": "Beispiel: xxxx"
+    },
+    "generatingAnswer": "Antwort wird generiert",
+
+    "tooltips": {
+        "submitQuestion": "Frage einreichen",
+        "askWithVoice": "Frage per Sprache stellen",
+        "stopRecording": "Aufnahme der Frage stoppen",
+        "showThoughtProcess": "Gedankenprozess anzeigen",
+        "showSupportingContent": "Unterstützenden Inhalt anzeigen",
+        "speakAnswer": "Antwort sprechen",
+        "info": "Info",
+        "save": "Speichern"
+    },
+
+    "headerTexts": {
+        "thoughtProcess": "Gedankenprozess",
+        "supportingContent": "Unterstützender Inhalt",
+        "citation": "Zitat"
+    },
+
+    "chatHistory": {
+        "today": "Heute",
+        "lastWeek": "Letzte Woche",
+        "older": "Älter",
+        "loadingHistory": "Verlauf wird geladen..."
+    },
+
+    "labels": {
+        "languagePicker": "Sprache auswählen",
+        "headerText": "Antwortgenerierung konfigurieren",
+        "closeButton": "Schließen",
+        "promptTemplate": "Prompt-Vorlage überschreiben",
+        "temperature": "Temperatur",
+        "minimumSearchScore": "Mindest-Suchscore",
+        "minimumRerankerScore": "Mindest-Reranker-Score",
+        "retrieveCount": "Diese Anzahl an Suchergebnissen abrufen:",
+        "excludeCategory": "Kategorie ausschließen",
+        "useSemanticRanker": "Semantischen Ranker für die Suche verwenden",
+        "useSemanticCaptions": "Semantische Beschreibungen verwenden",
+        "useSuggestFollowupQuestions": "Folgefragen vorschlagen",
+        "useGPT4V": "GPT-Vision-Modell verwenden",
+        "gpt4VInput": {
+            "label": "Eingaben des GPT-Vision-Modells",
+            "options": {
+                "textAndImages": "Bilder und Text",
+                "images": "Bilder",
+                "texts": "Text"
+            }
+        },
+        "retrievalMode": {
+            "label": "Abrufmodus",
+            "options": {
+                "hybrid": "Vektoren + Text (Hybrid)",
+                "vectors": "Vektoren",
+                "texts": "Text"
+            }
+        },
+        "vector": {
+            "label": "Vektorfelder (Multi-Query-Vektorsuche)",
+            "options": {
+                "embedding": "Text-Einbettungen",
+                "imageEmbedding": "Bild-Einbettungen",
+                "both": "Text- und Bild-Einbettungen"
+            }
+        },
+        "useOidSecurityFilter": "OID-Sicherheitsfilter verwenden",
+        "useGroupsSecurityFilter": "Gruppen-Sicherheitsfilter verwenden",
+        "shouldStream": "Antworten im Chat kontinuierlich streamen"
+    },
+
+    "helpTexts": {
+        "promptTemplate":
+            "Überschreibt den Prompt, der zur Generierung der Antwort basierend auf der Frage und den Suchergebnissen verwendet wird. Um den bestehenden Prompt zu ergänzen, anstatt den gesamten Prompt zu ersetzen, beginnen Sie Ihren Prompt mit '>>>'.",
+        "temperature":
+            "Legt die Temperatur der Anfrage an das LLM fest, das die Antwort generiert. Höhere Temperaturen führen zu kreativeren Antworten, die jedoch weniger fundiert sein können.",
+        "seed": "Setzt einen Seed, um die Reproduzierbarkeit der Antworten des Modells zu verbessern. Der Seed kann eine beliebige Ganzzahl sein.",
+        "searchScore":
+             "Setzt einen Mindestscore für Suchergebnisse aus der Azure AI-Suche. Der Score-Bereich hängt davon ab, ob Sie hybrid (Standard), nur Vektoren oder nur Text verwenden.",
+        "rerankerScore":
+             "Setzt einen Mindestscore für Suchergebnisse aus dem semantischen Reranker. Der Score reicht immer von 0 bis 4. Je höher der Score, desto semantisch relevanter ist das Ergebnis für die Frage.",
+        "retrieveNumber":
+             "Legt die Anzahl der Suchergebnisse fest, die aus der Azure AI-Suche abgerufen werden sollen. Mehr Ergebnisse erhöhen die Wahrscheinlichkeit, die richtige Antwort zu finden, können aber dazu führen, dass das Modell 'den Faden verliert'.",
+        "excludeCategory":
+            "Gibt eine Kategorie an, die aus den Suchergebnissen ausgeschlossen werden soll. Es gibt keine Kategorien im Standarddatensatz.",
+        "useSemanticReranker":
+            "Aktiviert den semantischen Ranker der Azure AI-Suche, ein Modell, das Suchergebnisse basierend auf semantischer Ähnlichkeit zur Benutzeranfrage neu ordnet.",
+        "useSemanticCaptions":
+             "Sendet semantische Beschreibungen an das LLM anstelle des vollständigen Suchergebnisses. Eine semantische Beschreibung wird während des Prozesses des semantischen Rankings aus einem Suchergebnis extrahiert.",
+        "suggestFollowupQuestions": "Fordert das LLM auf, Folgefragen basierend auf der Benutzeranfrage vorzuschlagen.",
+         "useGPT4Vision": "Verwendet GPT-4-Turbo mit Vision, um Antworten basierend auf Bildern und Text aus dem Index zu generieren.",
+        "vectorFields":
+            "Gibt an, welche Einbettungsfelder im Azure AI-Suchindex durchsucht werden, sowohl die Einbettungen für 'Bilder und Text', nur 'Bilder' oder nur 'Text'.",
+        "gpt4VisionInputs":
+            "Legt fest, was an das Vision-Modell gesendet wird. 'Bilder und Text' sendet sowohl Bilder als auch Text an das Modell, 'Bilder' sendet nur Bilder und 'Text' sendet nur Text.",
+        "retrievalMode":
+            "Legt den Abrufmodus für die Azure AI-Suchanfrage fest. `Vektoren + Text (Hybrid)` verwendet eine Kombination aus Vektorsuche und Volltextsuche, `Vektoren` verwendet nur die Vektorsuche und `Text` verwendet nur die Volltextsuche. Hybrid ist in der Regel optimal.",
+        "streamChat": "Streamt die Antwort kontinuierlich in die Chat-Benutzeroberfläche, während sie generiert wird.",
+        "useOidSecurityFilter": "Filtert Suchergebnisse basierend auf der OID des authentifizierten Benutzers.",
+        "useGroupsSecurityFilter": "Filtert Suchergebnisse basierend auf den Gruppen des authentifizierten Benutzers."
+    },
+
+    "promptButtons": {
+        "load": "Prompts Laden",
+        "save": "Prompt Speichern",
+        "woche": "Prompt Teilen"
+    },
+
+    "savePrompt": {
+        "title": "Prompt Speichern",
+        "name": "Name",
+        "namePlaceholder": "Geben Sie einen kurzen Namen für Ihren Prompt ein",
+        "promptHeader": "Prompt-Text",
+        "promptHeaderPlaceholder": "Geben Sie den Text für den Prompt ein",
+        "save": "Speichern",
+        "cancel": "Abbrechen"
+    },
+
+    "answerButtons": {
+        "copy": "Kopieren",
+        "wordExport": "Exportieren als Word Dokument",
+        "excelExport": "Exportieren als Excel Dokument",
+        "thoughtProcess": "Gedankenprozess anzeigen",
+        "supportingContent": "Unterstutzender Inhalt anzeigen"
+    }
+}

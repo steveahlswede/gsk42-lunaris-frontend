@@ -1,0 +1,13 @@
+.loginButton {
+    border-radius: 0.3125em;
+    font-weight: 100;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+}
+
+@media (max-width: 1920px) {
+    .loginButton {
+        font-size: 14px;
+    }
+}

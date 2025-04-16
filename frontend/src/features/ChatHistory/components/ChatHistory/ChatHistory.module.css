@@ -1,0 +1,128 @@
+.containerStyle {
+    width: 300px;
+    background-color: #fff6ed;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.chatsContainer {
+    overflow-y: auto;
+}
+
+.headerCompanyLogoPosition {
+    display: block;
+    left: 10px;
+    top: -10px;
+    transition: width 0.75s;
+    width: 135px;
+}
+
+.headerLogo {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.chatHistoryItem {
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    background-color: #fff6ed;
+    transition: background-color 0.3s;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chatHistoryItem:hover {
+    background-color: #e1e1e1;
+}
+
+.chatHistorySection {
+    margin-bottom: 1.5rem;
+}
+
+.chatHistorySectionTitle {
+    font-weight: 600;
+    margin: 0.5rem 1rem;
+    font-size: 19px;
+}
+
+.chatIcon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.chatHistoryTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.chatHistoryChangeTitle {
+    padding: 0.5rem;
+}
+
+.chatHistoryChangeTitle:hover {
+    background-color: #e8e8e8;
+}
+
+.chatHistoryDeleteButton {
+    padding: 0.5rem;
+    color: red;
+}
+
+.chatHistoryDeleteButton:hover {
+    background-color: #e8e8e8;
+}
+
+.chatHistoryStack {
+    height: 100%;
+    width: 100%;
+}
+
+.stackItem {
+    margin-bottom: auto;
+}
+
+.chatItemOptions {
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+@media (max-width: 1920px) {
+    .chatHistoryTitle {
+        font-size: 13px;
+    }
+
+    .containerStyle {
+        width: 250px;
+    }
+
+    .chatIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .chatHistorySectionTitle {
+        font-weight: 600;
+        margin: 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .containerStyle {
+        width: 210px;
+    }
+}

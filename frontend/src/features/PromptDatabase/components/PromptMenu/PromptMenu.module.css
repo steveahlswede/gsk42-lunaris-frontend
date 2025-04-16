@@ -1,0 +1,64 @@
+.promptMenu {
+    height: 350px !important;
+    width: 500px !important;
+}
+
+.promptItemsMissing {
+    font-family: "Lucida Handwriting", "Cursive", "Arial", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.clickablePrompt {
+    flex: 1;
+    transition: background-color 0.2s ease;
+    margin-left: 0.6rem;
+}
+
+.clickablePrompt:hover {
+    background-color: #eeeeee;
+}
+
+.userPromptContainer {
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.2s ease;
+}
+
+.userPromptContainer:hover {
+    background-color: #eeeeee;
+}
+
+.deletePromptButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.deletePromptButton:hover {
+    filter: invert(15%) sepia(94%) saturate(6091%) hue-rotate(360deg) brightness(91%) contrast(117%);
+}
+
+.itemsContainer {
+    overflow-y: auto;
+}
+
+.itemsContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(147, 147, 147);
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+}
+
+.itemsContainer::-webkit-scrollbar {
+    width: 16px;
+}
+
+@media (max-width: 1280px) {
+    .promptMenu {
+        height: 225px !important;
+        width: 275px !important;
+    }
+}

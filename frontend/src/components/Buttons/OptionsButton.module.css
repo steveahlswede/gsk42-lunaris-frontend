@@ -1,0 +1,32 @@
+.dotStyle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #424242;
+    transition: background-color 0.3s ease;
+}
+
+.optionsButtonDiv {
+    display: flex;
+    align-items: center;
+}
+
+.optionsButton {
+    padding: 1em 0em;
+    margin-left: 4px;
+    flex-shrink: 0;
+    color: #424242;
+    background-color: transparent;
+    border: none;
+}
+
+.optionsButton:hover .dotStyle {
+    background-color: #66b5c3;
+}
+
+@media (max-width: 1920px) {
+    .dotStyle {
+        width: 4px;
+        height: 4px;
+    }
+}

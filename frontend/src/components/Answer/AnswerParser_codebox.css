@@ -1,0 +1,88 @@
+/* Code block styles */
+.code-container {
+    margin-bottom: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    color: #333;
+}
+
+.code-language {
+    font-weight: bold;
+    color: #666;
+}
+
+.copy-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+pre {
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 14px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+}
+
+/* Citation styles */
+.supContainer {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.supContainer:hover {
+    text-decoration: underline;
+}
+
+sup {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 600;
+    vertical-align: top;
+    margin: 0 0.125em;
+    background: #d1dbfa;
+    color: #123bb6;
+    border-radius: 0.1875em;
+    min-width: 0.875em;
+    height: 0.875em;
+    outline: transparent solid 0.0625em;
+    cursor: pointer;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .code-header,
+    .copy-button,
+    .pre {
+        font-size: 10px;
+    }
+}
